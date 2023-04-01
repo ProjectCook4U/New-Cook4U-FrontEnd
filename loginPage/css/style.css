@@ -1,0 +1,85 @@
+body{
+    font-family: 'Itim', cursive;
+    background-color: #FFEB91;
+    text-align: center;
+}
+
+.logo{
+    padding-left: 40px;
+    display: block;
+    margin: auto;
+}
+
+.button{
+    background-color: #91A5FF;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    margin: 10px 100px;
+    border-radius: 20px;
+}
+
+.buy-button{
+    background-color: #91A5FF;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input{
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border: none;
+}
+
+.text{
+    font-size: 36px;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px
+}
+
+.row {
+    display: flex;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.input-header{
+    margin-right: 50%;
+    color: black;
+}
+
+.input-email{
+    margin-right: 55%;
+}
+
+.input-pass{
+    margin-right: 40%;
+}
+
+.user{
+    padding-top: 10%;
+}
+
+.profile{
+    padding-top: 5%;
+}
