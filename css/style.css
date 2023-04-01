@@ -19,7 +19,14 @@ body{
     background-color: white;
     border-radius: 50px;
     padding: 10px;
+    position: fixed;
+    right: 0.5%;
+    bottom: -3%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
 
 .button{
     background-color: #91A5FF;
