@@ -1,0 +1,91 @@
+body{
+    font-family: 'Itim', cursive;
+    background-color: #FFEB91;
+    text-align: center;
+}
+
+.logo{
+    padding-left: 40px;
+    display: block;
+    margin: auto;
+}
+
+.material-icons{
+    float: right;
+    cursor: pointer;
+}
+
+.cart{
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    position: fixed;
+    right: 0.5%;
+    bottom: -3%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.button{
+    background-color: #91A5FF;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    margin: 10px 100px;
+    border-radius: 20px;
+}
+
+.now-button{
+    background-color: white;
+    color: #91A5FF;
+}
+
+.buy-button{
+    background-color: #91A5FF;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+select{
+    cursor: pointer;
+    font-family: 'Itim';
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.column{
+    flex: 50%;
+    padding: 10px;
+    height: 300px
+}
+
+.row{
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text{
+    font-size: 36px;
+}
+
+.type-img{
+    float: left;
+    width: 25%;
+    height: 300px;
+}
