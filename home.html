@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet"/>
+    <title>Home</title>
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <i class="material-icons" style="font-size: 40px;">account_circle</i>
+    <p><div><img src="./image/Logo.png" class="logo" width="150" height="130"></div></p>
+    <br>
+    <div><a href="./home.html" class="button now-button" style="text-decoration:none" >Home</a>
+    <a href="./menuPage/menu.html" class="button" style="text-decoration:none" >Menu</a>
+    <a href="./loginPage/login.html" class="button" style="text-decoration:none" >Login</a></div>
+    <p>
+        <br>
+        <div class="text">Recommended Menu</div>
+        <div class="slideshow-container">
+            <div class="slides1">
+                <img src="./image/dish/Herb_Crusted_Salmon.png" class="slide-img">
+                <div class="food-name"><h2>Herb Crusted Salmon</h2></div>
+                <div class="food-price"><h3>129 Baht/1 Dish</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>  
+            <div class="slides1">
+                <img src="./image/dish/Volcano_Pasta.png" class="slide-img">
+                <div class="food-name"><h2>Volcano Pasta</h2></div>
+                <div class="food-price"><h3>165 Baht/1 Dish</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>    
+            <div class="slides1">
+                <img src="./image/appetizer/Caesar_Salad.png" class="slide-img">
+                <div class="food-name"><h2>Caesar Salad</h2></div>
+                <div class="food-price"><h3>95 Baht/1 Dish</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>                  
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a></div>
+        <br><br>
+        <div class="text">Best-Seller Menu</div>
+        <div class="slideshow-container">
+            <div class="slides2">
+                <img src="./image/dish/Mac_Cheese.png" class="slide-img">
+                <div class="food-name"><h2>Mac and Cheese</h2></div>
+                <div class="food-price"><h3>109 Baht/1 Dish</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>
+            <div class="slides2">
+                <img src="./image/dish/Spaghetti.png" class="slide-img">
+                <div class="food-name"><h2>Spaghetti with Tomato Sauce</h2></div>
+                <div class="food-price"><h3>119 Baht/1 Dish</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>
+            <div class="slides2">
+                <img src="./image/dessert/Hamburger_Cake.png" class="slide-img">
+                <div class="food-name"><h2>Hamburger Cake</h2></div>
+                <div class="food-price"><h3>300 Baht/1 Pound</h3></div>
+                <a href="#" class="buy-button" style="text-decoration:none">Buy</a>
+            </div>                  
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+    </p>
+    <br>
+    <div><a href="./customer/order_cutomer.html"><i class="material-icons cart" style="font-size: 40px; text-decoration:none; color: black;">shopping_cart</i></a></div>
+
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["slides1", "slides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
