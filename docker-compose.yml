@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  frontend:
+    image: spaceshade/cook4u:latest
+    restart: always
+    ports:
+      - "8080:3000"
