@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  frontend:
+    image: spaceshade/front-end:latest
+    restart: always
+    ports:
+      - "8081:3000"
