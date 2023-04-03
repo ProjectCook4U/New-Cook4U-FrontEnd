@@ -2,7 +2,7 @@ name: deploy dev
 on:
   push:
     branches:
-      - dev
+      - Dev
 
 jobs:
   deploy-app:
@@ -36,9 +36,9 @@ jobs:
       - 
         name: Prepare docker-compose run
         run: |
-          mkdir Cook4U-dev
-          cp docker-compose.yml Cook4U-dev/docker-compose.yml
-          cd Cook4U-dev
+          mkdir cook4u-dev
+          cp docker-compose.yml cook4u-dev/docker-compose.yml
+          cd cook4u-dev
           docker-compose -H ${{ secrets.DOCKER_HOST_SERVER }} down 
           docker-compose -H ${{ secrets.DOCKER_HOST_SERVER }} pull
           docker-compose -H ${{ secrets.DOCKER_HOST_SERVER }} up -d

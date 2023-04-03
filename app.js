@@ -15,8 +15,8 @@ app.use(session({
     saveUninitialized: true,
     cookie: { maxAge: 3600000 },
     store: MongoStore.create({
-    mongoUrl: 'mongodb://18.210.16.84:8105/Cook4U',
-    dbName: "kodnuey"
+    mongoUrl: 'mongodb+srv://SpaceShade:Kard_1539@cook4u.kxqekco.mongodb.net/test',
+    dbName: "cook4u"
     }),
   }));
 // set the view engine to ejs
@@ -44,3 +44,7 @@ app.post('/register', async(req, res) => {
     res.redirect('/')
     console.log(req.session);
   })
+
+app.listen("3000", function () {
+  console.log("server is listening on port 3000");
+});
